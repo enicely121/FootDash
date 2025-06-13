@@ -1,0 +1,228 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #fff;
+    color: #222;
+}
+
+/* Header styles */
+.header {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.left.header,
+.right.header {
+    width: 25%;
+}
+
+.logo {
+    width: 50vw; /* Increased width to make the logo bigger */
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.logo img {
+    width: 200px;
+}
+
+/* Navigation bar styles */
+/* Navigation bar styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center everything around the logo */
+    padding: 10px;
+    gap: 150px; /* Control the spacing between left nav, logo, and right nav */
+}
+
+nav .nav-left,
+nav .nav-right {
+    display: flex;
+    gap: 40px; /* Space between individual navigation items */
+}
+
+nav .logo {
+    flex-shrink: 0; /* Prevent the logo from shrinking */
+    text-align: center;
+    width: auto; /* Remove the 50vw width that was making it too wide */
+}
+
+nav .logo img {
+    width: 250px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+nav a:hover {
+    color: orangered;
+}
+/* Hero section */
+.hero {
+    background-image: url('../assets/scroll_trigger_image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    padding: 100px 80px;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    white-space: nowrap;
+    /* Prevent line break */
+}
+
+.hero-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-content ul li {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+    color: #ddd;
+}
+
+/* small check-like icons */
+.hero-content ul li::before {
+    content: '☑';
+    /* Change this to suit the style — try '✓', '✔', '⮞', etc. */
+    position: absolute;
+    left: 0;
+    color: #aaa;
+}
+
+.game-options {
+    display: flex;
+    flex-wrap: wrap; /* Ensures images stay inline and wrap if necessary */
+    justify-content: center; /* Centers the images horizontally */
+    align-items: center; /* Aligns the images vertically */
+}
+
+.game-options img {
+    width: 45vw; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Adds spacing between images */
+}
+
+
+/* horizontal line next to each item */
+.hero-content ul li::after {
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    width: 60px;
+    height: 1px;
+    background: #999;
+    vertical-align: middle;
+}
+
+/* What do we offer */
+.paragraph-1 {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.paragraph-1 h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.paragraph-1 p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+.paragraph-1 button {
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Image sections */
+a img {
+    width: 45%;
+    margin: 20px 2.5%;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sports section */
+h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    text-transform: uppercase;
+}
+
+/* User Reviews */
+.user-reviews {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+}
+
+.user-reviews .review {
+    width: 30%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.user-reviews img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}

@@ -102,7 +102,7 @@ nav a:hover {
 .hero-content h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     border-bottom: 2px solid #ccc;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -128,11 +128,28 @@ nav a:hover {
 
 /* small check-like icons */
 .hero-content ul li::before {
-    content: '☑';
     /* Change this to suit the style — try '✓', '✔', '⮞', etc. */
     position: absolute;
     left: 0;
     color: #aaa;
+}
+/* Hero button styling */
+.hero-content button {
+    background-color: orangered;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px; /* Makes it rounded */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #cc4400; /* Darker on hover */
+    transform: scale(1.05); /* Slightly bigger on hover */
 }
 
 .game-options {
@@ -151,13 +168,11 @@ nav a:hover {
 
 /* horizontal line next to each item */
 .hero-content ul li::after {
-    content: '';
     display: inline-block;
     margin-left: 10px;
     width: 60px;
     height: 1px;
     background: #999;
-    vertical-align: middle;
 }
 
 /* What do we offer */
@@ -185,6 +200,7 @@ nav a:hover {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 /* Image sections */
@@ -201,6 +217,21 @@ h2 {
     text-align: center;
     margin: 40px 0 20px;
     text-transform: uppercase;
+}
+
+/* Sports icons */
+.sports-icons {
+    display: flex; /* Use Flexbox to align items inline */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Align the icons vertically */
+    gap: 40px; /* Add spacing between the icons */
+}
+
+.sports-icons img {
+    width: 20vw; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for styling */
 }
 
 /* User Reviews */
